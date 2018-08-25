@@ -1,0 +1,60 @@
+// Action Buttons
+.action-buttons-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $m-size;
+}
+
+.action-buttons-container__button {
+    margin: 0 0 $s-size 0;
+}
+
+// -- setting up mobile friendly styling
+@media (min-width: $desktop-breakpoint) {
+    .action-buttons-container {
+        flex-direction: row;
+    }
+
+    .action-buttons-container__button {
+        margin: 0;
+    }
+}
+
+// Add Option Error
+.add-option-error {
+    color: $off-white;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+}
+
+// Add Option
+.add-option {
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+}
+
+.add-option__input {
+    background: $dark-blue;
+    border: 0;
+    border-bottom: .3rem solid darken($dark-blue, 10%);
+    color: $off-white;
+    flex-grow: 1;
+    margin: 0 0 $s-size 0;
+    //margin-right: $s-size;
+    padding: $s-size;
+}
+
+// -- setting up mobile friendly styling
+@media (min-width: $desktop-breakpoint) {
+    .add-option {
+        flex-direction: row;
+    }
+
+    .add-option__input {
+        margin: 0 $s-size 0 0;
+    }
+}

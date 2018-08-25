@@ -1,0 +1,29 @@
+// Button
+.button {
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple, 10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+    width: 20rem;
+}
+
+.button:disabled {
+    opacity: .5;
+}
+
+// -- example of style subclass
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+// -- mobile styling (this is actually desktop styling and the mobile styling is above)
+@media (min-width: $desktop-breakpoint) {
+    .button {
+        margin-bottom: $l-size;
+    }
+}
